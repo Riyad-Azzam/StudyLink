@@ -1,0 +1,744 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Progress | StudyLink</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head><body><!-- =========================
+     SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <span class="logo-icon">
+            📚
+        </span>
+
+        <div>
+
+            <h2>
+                StudyLink
+            </h2>
+
+            <p>
+                Study smarter.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="side-nav">
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+            <span>🏠</span>
+            <span>Dashboard</span>
+        </a>
+
+
+        <a
+            href="planner.html"
+            class="nav-item"
+        >
+            <span>📋</span>
+            <span>Study Planner</span>
+        </a>
+
+
+        <a
+            href="pomodoro.html"
+            class="nav-item"
+        >
+            <span>⏱️</span>
+            <span>Pomodoro</span>
+        </a>
+
+
+        <a
+            href="quizzes.html"
+            class="nav-item"
+        >
+            <span>🧠</span>
+            <span>Quizzes</span>
+        </a>
+
+
+        <a
+            href="progress.html"
+            class="nav-item active"
+        >
+            <span>📊</span>
+            <span>Progress</span>
+        </a>
+
+
+        <a
+            href="resources.html"
+            class="nav-item"
+        >
+            <span>📖</span>
+            <span>Resources</span>
+        </a>
+
+
+        <a
+            href="peer-help.html"
+            class="nav-item"
+        >
+            <span>🤝</span>
+            <span>Peer Help</span>
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="study-tip">
+
+            <span>
+                💡
+            </span>
+
+            <div>
+
+                <strong>
+                    Study Tip
+                </strong>
+
+                <p>
+                    Progress is built one
+                    task at a time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <p class="welcome-small">
+                YOUR PERFORMANCE
+            </p>
+
+            <h1>
+                My Progress 📊
+            </h1>
+
+            <p class="page-description">
+                See how much you've completed
+                and track your study journey.
+            </p>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         OVERALL PROGRESS
+    ========================== -->
+
+    <section class="progress-hero">
+
+
+        <div class="progress-hero-content">
+
+            <span class="section-label">
+                OVERALL PROGRESS
+            </span>
+
+            <h2>
+                Keep going. You're building
+                momentum.
+            </h2>
+
+            <p>
+                Every completed task moves
+                you closer to your goals.
+            </p>
+
+        </div>
+
+
+        <div class="progress-circle">
+
+            <div class="progress-circle-inner">
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+                <span>
+                    Complete
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STAT CARDS
+    ========================== -->
+
+    <section class="progress-stats-grid">
+
+
+        <div class="progress-stat-card">
+
+            <div class="progress-stat-icon">
+                📋
+            </div>
+
+            <span>
+                Total Tasks
+            </span>
+
+            <strong id="totalTasks">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="progress-stat-card">
+
+            <div class="progress-stat-icon">
+                ✅
+            </div>
+
+            <span>
+                Completed
+            </span>
+
+            <strong id="completedTasks">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="progress-stat-card">
+
+            <div class="progress-stat-icon">
+                ⏳
+            </div>
+
+            <span>
+                Remaining
+            </span>
+
+            <strong id="remainingTasks">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="progress-stat-card">
+
+            <div class="progress-stat-icon">
+                🎯
+            </div>
+
+            <span>
+                Completion Rate
+            </span>
+
+            <strong id="progressRate">
+                0%
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROGRESS BAR
+    ========================== -->
+
+    <section class="progress-card">
+
+        <div class="card-heading">
+
+            <div>
+
+                <span class="section-label">
+                    OVERALL
+                </span>
+
+                <h2>
+                    Study Completion
+                </h2>
+
+            </div>
+
+            <strong
+                id="progressPercentSmall"
+                class="progress-number"
+            >
+                0%
+            </strong>
+
+        </div>
+
+
+        <div class="progress-bar large-progress">
+
+            <div
+                id="progressFill"
+                style="width: 0%;"
+            ></div>
+
+        </div>
+
+
+        <p class="progress-description">
+            Your percentage is calculated from
+            completed tasks compared with all
+            your current tasks.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         SUBJECT PROGRESS
+    ========================== -->
+
+    <section class="subject-progress-section">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    BY SUBJECT
+                </span>
+
+                <h2>
+                    Subject Progress
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="subjectProgress"
+            class="subject-progress-grid"
+        >
+
+
+            <!-- Math -->
+
+            <div
+                class="subject-progress-card"
+                data-progress-subject="Math"
+            >
+
+                <div class="subject-progress-header">
+
+                    <div>
+
+                        <span class="subject-progress-icon">
+                            ➗
+                        </span>
+
+                        <strong>
+                            Math
+                        </strong>
+
+                    </div>
+
+                    <span
+                        class="subject-progress-percent"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="subject-progress-bar">
+
+                    <div
+                        class="subject-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p class="subject-progress-text">
+                    0 of 0 tasks completed
+                </p>
+
+            </div>
+
+
+
+            <!-- Arabic -->
+
+            <div
+                class="subject-progress-card"
+                data-progress-subject="Arabic"
+            >
+
+                <div class="subject-progress-header">
+
+                    <div>
+
+                        <span class="subject-progress-icon">
+                            🇯🇴
+                        </span>
+
+                        <strong>
+                            Arabic
+                        </strong>
+
+                    </div>
+
+                    <span
+                        class="subject-progress-percent"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="subject-progress-bar">
+
+                    <div
+                        class="subject-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p class="subject-progress-text">
+                    0 of 0 tasks completed
+                </p>
+
+            </div>
+
+
+
+            <!-- English -->
+
+            <div
+                class="subject-progress-card"
+                data-progress-subject="English"
+            >
+
+                <div class="subject-progress-header">
+
+                    <div>
+
+                        <span class="subject-progress-icon">
+                            🇬🇧
+                        </span>
+
+                        <strong>
+                            English
+                        </strong>
+
+                    </div>
+
+                    <span
+                        class="subject-progress-percent"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="subject-progress-bar">
+
+                    <div
+                        class="subject-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p class="subject-progress-text">
+                    0 of 0 tasks completed
+                </p>
+
+            </div>
+
+
+
+            <!-- Computer Science -->
+
+            <div
+                class="subject-progress-card"
+                data-progress-subject="Computer Science"
+            >
+
+                <div class="subject-progress-header">
+
+                    <div>
+
+                        <span class="subject-progress-icon">
+                            💻
+                        </span>
+
+                        <strong>
+                            Computer Science
+                        </strong>
+
+                    </div>
+
+                    <span
+                        class="subject-progress-percent"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="subject-progress-bar">
+
+                    <div
+                        class="subject-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p class="subject-progress-text">
+                    0 of 0 tasks completed
+                </p>
+
+            </div>
+
+
+
+            <!-- Physics -->
+
+            <div
+                class="subject-progress-card"
+                data-progress-subject="Physics"
+            >
+
+                <div class="subject-progress-header">
+
+                    <div>
+
+                        <span class="subject-progress-icon">
+                            ⚛️
+                        </span>
+
+                        <strong>
+                            Physics
+                        </strong>
+
+                    </div>
+
+                    <span
+                        class="subject-progress-percent"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="subject-progress-bar">
+
+                    <div
+                        class="subject-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p class="subject-progress-text">
+                    0 of 0 tasks completed
+                </p>
+
+            </div>
+
+
+
+            <!-- Chemistry -->
+
+            <div
+                class="subject-progress-card"
+                data-progress-subject="Chemistry"
+            >
+
+                <div class="subject-progress-header">
+
+                    <div>
+
+                        <span class="subject-progress-icon">
+                            🧪
+                        </span>
+
+                        <strong>
+                            Chemistry
+                        </strong>
+
+                    </div>
+
+                    <span
+                        class="subject-progress-percent"
+                    >
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="subject-progress-bar">
+
+                    <div
+                        class="subject-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <p class="subject-progress-text">
+                    0 of 0 tasks completed
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ACTIONS
+    ========================== -->
+
+    <section class="progress-actions">
+
+        <a
+            href="planner.html"
+            class="primary-button"
+        >
+            📋 Open Planner
+        </a>
+
+
+        <a
+            href="quizzes.html"
+            class="secondary-button"
+        >
+            🧠 Practice a Quiz
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         MOTIVATION
+    ========================== -->
+
+    <section class="progress-tip-card">
+
+        <div class="tip-icon">
+            🚀
+        </div>
+
+        <div>
+
+            <h3>
+                Focus on progress, not perfection.
+            </h3>
+
+            <p>
+                A completed task is one more
+                step forward. Keep building
+                your streak one session at a time.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-logo">
+            📚 StudyLink
+        </div>
+
+        <p>
+            Learn. Organize. Improve.
+        </p>
+
+    </footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body></html>

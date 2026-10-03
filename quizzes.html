@@ -1,0 +1,546 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Quizzes | StudyLink</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head><body><!-- =========================
+     SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <span class="logo-icon">
+            📚
+        </span>
+
+        <div>
+
+            <h2>
+                StudyLink
+            </h2>
+
+            <p>
+                Study smarter.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="side-nav">
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+            <span>🏠</span>
+            <span>Dashboard</span>
+        </a>
+
+
+        <a
+            href="planner.html"
+            class="nav-item"
+        >
+            <span>📋</span>
+            <span>Study Planner</span>
+        </a>
+
+
+        <a
+            href="pomodoro.html"
+            class="nav-item"
+        >
+            <span>⏱️</span>
+            <span>Pomodoro</span>
+        </a>
+
+
+        <a
+            href="quizzes.html"
+            class="nav-item active"
+        >
+            <span>🧠</span>
+            <span>Quizzes</span>
+        </a>
+
+
+        <a
+            href="progress.html"
+            class="nav-item"
+        >
+            <span>📊</span>
+            <span>Progress</span>
+        </a>
+
+
+        <a
+            href="resources.html"
+            class="nav-item"
+        >
+            <span>📖</span>
+            <span>Resources</span>
+        </a>
+
+
+        <a
+            href="peer-help.html"
+            class="nav-item"
+        >
+            <span>🤝</span>
+            <span>Peer Help</span>
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="study-tip">
+
+            <span>
+                💡
+            </span>
+
+            <div>
+
+                <strong>
+                    Study Tip
+                </strong>
+
+                <p>
+                    Test yourself to find
+                    what you really know.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <p class="welcome-small">
+                TEST YOUR KNOWLEDGE
+            </p>
+
+            <h1>
+                Quizzes 🧠
+            </h1>
+
+            <p class="page-description">
+                Challenge yourself, practice,
+                and see how much you've learned.
+            </p>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         QUIZ INTRO
+    ========================== -->
+
+    <section class="quiz-hero">
+
+        <div>
+
+            <span class="section-label">
+                KNOWLEDGE CHECK
+            </span>
+
+            <h2>
+                Ready to test yourself?
+            </h2>
+
+            <p>
+                Choose a subject and start
+                a quiz. Each question gives
+                you a chance to improve.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-hero-icon">
+            🧠
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUIZ SELECTOR
+    ========================== -->
+
+    <section class="quiz-selector">
+
+
+        <div class="card-heading">
+
+            <div>
+
+                <span class="section-label">
+                    START A QUIZ
+                </span>
+
+                <h2>
+                    Choose your subject
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="quiz-subject-grid">
+
+
+            <button
+                class="quiz-subject-card"
+                data-quiz-subject="Math"
+            >
+
+                <span class="quiz-subject-icon">
+                    ➗
+                </span>
+
+                <strong>
+                    Math
+                </strong>
+
+                <small>
+                    Numbers & problem solving
+                </small>
+
+            </button>
+
+
+            <button
+                class="quiz-subject-card"
+                data-quiz-subject="Arabic"
+            >
+
+                <span class="quiz-subject-icon">
+                    🇯🇴
+                </span>
+
+                <strong>
+                    Arabic
+                </strong>
+
+                <small>
+                    Language & grammar
+                </small>
+
+            </button>
+
+
+            <button
+                class="quiz-subject-card"
+                data-quiz-subject="English"
+            >
+
+                <span class="quiz-subject-icon">
+                    🇬🇧
+                </span>
+
+                <strong>
+                    English
+                </strong>
+
+                <small>
+                    Language & vocabulary
+                </small>
+
+            </button>
+
+
+            <button
+                class="quiz-subject-card"
+                data-quiz-subject="Computer Science"
+            >
+
+                <span class="quiz-subject-icon">
+                    💻
+                </span>
+
+                <strong>
+                    Computer Science
+                </strong>
+
+                <small>
+                    Programming & technology
+                </small>
+
+            </button>
+
+
+            <button
+                class="quiz-subject-card"
+                data-quiz-subject="Physics"
+            >
+
+                <span class="quiz-subject-icon">
+                    ⚛️
+                </span>
+
+                <strong>
+                    Physics
+                </strong>
+
+                <small>
+                    Forces & energy
+                </small>
+
+            </button>
+
+
+            <button
+                class="quiz-subject-card"
+                data-quiz-subject="Chemistry"
+            >
+
+                <span class="quiz-subject-icon">
+                    🧪
+                </span>
+
+                <strong>
+                    Chemistry
+                </strong>
+
+                <small>
+                    Matter & reactions
+                </small>
+
+            </button>
+
+        </div>
+
+
+
+        <input
+            type="hidden"
+            id="quizSubject"
+            value="Math"
+        >
+
+
+        <button
+            id="startQuizButton"
+            class="start-quiz-button"
+        >
+            ▶ Start Quiz
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUIZ AREA
+    ========================== -->
+
+    <section
+        id="quizArea"
+        class="quiz-area"
+    >
+
+
+        <div class="quiz-progress-top">
+
+            <span id="quizProgress">
+                Question 0
+            </span>
+
+            <span id="quizScore">
+                Score: 0 / 0
+            </span>
+
+        </div>
+
+
+
+        <div class="quiz-question-card">
+
+
+            <span class="question-label">
+                QUESTION
+            </span>
+
+
+            <h2 id="quizQuestion">
+                Choose a subject and
+                start a quiz.
+            </h2>
+
+
+            <div
+                id="quizAnswers"
+                class="quiz-answers"
+            >
+
+            </div>
+
+
+            <p
+                id="quizFeedback"
+                class="quiz-feedback"
+            >
+            </p>
+
+
+            <button
+                id="nextQuestionButton"
+                class="next-question-button"
+                style="display: none;"
+            >
+                Next Question →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUIZ RESULTS
+    ========================== -->
+
+    <section
+        id="quizResult"
+        class="quiz-result"
+        style="display: none;"
+    >
+
+        <div class="result-icon">
+            🏆
+        </div>
+
+        <span class="section-label">
+            QUIZ COMPLETE
+        </span>
+
+        <h2>
+            Great work!
+        </h2>
+
+        <p id="finalQuizScore">
+            Your score will appear here.
+        </p>
+
+
+        <div class="result-actions">
+
+            <button
+                id="retryQuizButton"
+                class="primary-button"
+            >
+                🔄 Try Again
+            </button>
+
+
+            <a
+                href="progress.html"
+                class="secondary-button"
+            >
+                📊 View Progress
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STUDY TIP
+    ========================== -->
+
+    <section class="quiz-tip-card">
+
+        <div class="tip-icon">
+            💡
+        </div>
+
+        <div>
+
+            <h3>
+                Don't worry about mistakes.
+            </h3>
+
+            <p>
+                Every wrong answer shows you
+                something you can learn next.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-logo">
+            📚 StudyLink
+        </div>
+
+        <p>
+            Learn. Organize. Improve.
+        </p>
+
+    </footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body></html>

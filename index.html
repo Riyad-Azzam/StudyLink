@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyLink 📚</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-icon">📚</span>
+
+            <div>
+                <strong>StudyLink</strong>
+                <span>Your study platform</span>
+            </div>
+        </div>
+
+        <nav class="side-nav">
+
+            <a href="index.html" class="nav-item active">
+                <span>⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="planner.html" class="nav-item">
+                <span>✓</span>
+                <span>Study Planner</span>
+            </a>
+
+            <a href="pomodoro.html" class="nav-item">
+                <span>◷</span>
+                <span>Pomodoro</span>
+            </a>
+
+            <a href="quizzes.html" class="nav-item">
+                <span>?</span>
+                <span>Quizzes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <span>↗</span>
+                <span>Progress</span>
+            </a>
+
+            <a href="resources.html" class="nav-item">
+                <span>▣</span>
+                <span>Resources</span>
+            </a>
+
+            <a href="peer-help.html" class="nav-item">
+                <span>♧</span>
+                <span>Peer Help</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="study-tip">
+                <span class="tip-icon">💡</span>
+
+                <div>
+                    <strong>Study Tip</strong>
+                    <p>Small progress every day adds up.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+                <p class="welcome-small">
+                    Welcome back 👋
+                </p>
+
+                <h1>Dashboard</h1>
+
+                <p class="page-description">
+                    Keep track of your learning and stay organized.
+                </p>
+            </div>
+
+            <div class="topbar-date" id="currentDate">
+                Today
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="dashboard-hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    STUDY SMART
+                </span>
+
+                <h2>
+                    Learn better.
+                    <br>
+                    <span>Achieve more.</span>
+                </h2>
+
+                <p>
+                    Organize your tasks, track your progress,
+                    practice with quizzes, and build better
+                    study habits with StudyLink.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="planner.html"
+                        class="primary-button"
+                    >
+                        Open Study Planner
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        href="progress.html"
+                        class="secondary-button"
+                    >
+                        View Progress
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+
+                <div class="floating-book">
+                    📖
+                </div>
+
+                <div class="floating-star star-one">
+                    ✦
+                </div>
+
+                <div class="floating-star star-two">
+                    ✧
+                </div>
+
+                <div class="floating-star star-three">
+                    ✦
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DASHBOARD STATS
+        ========================== -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+                    <span>Total Tasks</span>
+                    <strong id="dashboardTotal">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <span>Completed</span>
+                    <strong id="dashboardCompleted">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⏳
+                </div>
+
+                <div>
+                    <span>Remaining</span>
+                    <strong id="dashboardRemaining">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ↗
+                </div>
+
+                <div>
+                    <span>Progress</span>
+                    <strong id="dashboardProgress">0%</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SUBJECTS
+        ========================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        YOUR SUBJECTS
+                    </span>
+
+                    <h2>Keep learning</h2>
+                </div>
+
+                <a
+                    href="planner.html"
+                    class="view-all"
+                >
+                    View Planner →
+                </a>
+
+            </div>
+
+
+            <div class="subjects-grid">
+
+
+                <!-- MATH -->
+
+                <a
+                    href="planner.html?subject=Math"
+                    class="subject-card math-card"
+                >
+
+                    <div class="subject-top">
+
+                        <div class="subject-icon">
+                            ∑
+                        </div>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="subject-name">
+                        Math
+                    </div>
+
+                    <p>
+                        Numbers, algebra & problem solving
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span class="task-count">
+                            0 Tasks
+                        </span>
+
+                        <span>
+                            View tasks →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- ARABIC -->
+
+                <a
+                    href="planner.html?subject=Arabic"
+                    class="subject-card arabic-card"
+                >
+
+                    <div class="subject-top">
+
+                        <div class="subject-icon">
+                            ع
+                        </div>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="subject-name">
+                        Arabic
+                    </div>
+
+                    <p>
+                        Language, grammar & literature
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span class="task-count">
+                            0 Tasks
+                        </span>
+
+                        <span>
+                            View tasks →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- ENGLISH -->
+
+                <a
+                    href="planner.html?subject=English"
+                    class="subject-card english-card"
+                >
+
+                    <div class="subject-top">
+
+                        <div class="subject-icon">
+                            A
+                        </div>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="subject-name">
+                        English
+                    </div>
+
+                    <p>
+                        Grammar, vocabulary & writing
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span class="task-count">
+                            0 Tasks
+                        </span>
+
+                        <span>
+                            View tasks →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- COMPUTER SCIENCE -->
+
+                <a
+                    href="planner.html?subject=Computer%20Science"
+                    class="subject-card cs-card"
+                >
+
+                    <div class="subject-top">
+
+                        <div class="subject-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="subject-name">
+                        Computer Science
+                    </div>
+
+                    <p>
+                        Programming, algorithms & technology
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span class="task-count">
+                            0 Tasks
+                        </span>
+
+                        <span>
+                            View tasks →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PHYSICS -->
+
+                <a
+                    href="planner.html?subject=Physics"
+                    class="subject-card physics-card"
+                >
+
+                    <div class="subject-top">
+
+                        <div class="subject-icon">
+                            ⚛
+                        </div>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="subject-name">
+                        Physics
+                    </div>
+
+                    <p>
+                        Forces, energy & the universe
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span class="task-count">
+                            0 Tasks
+                        </span>
+
+                        <span>
+                            View tasks →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- CHEMISTRY -->
+
+                <a
+                    href="planner.html?subject=Chemistry"
+                    class="subject-card chemistry-card"
+                >
+
+                    <div class="subject-top">
+
+                        <div class="subject-icon">
+                            ⚗
+                        </div>
+
+                        <span class="arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="subject-name">
+                        Chemistry
+                    </div>
+
+                    <p>
+                        Atoms, reactions & matter
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span class="task-count">
+                            0 Tasks
+                        </span>
+
+                        <span>
+                            View tasks →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURES
+        ========================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        STUDY TOOLS
+                    </span>
+
+                    <h2>Everything in one place</h2>
+                </div>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <!-- PLANNER -->
+
+                <a
+                    href="planner.html"
+                    class="feature-card"
+                >
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Study Planner
+                        </h3>
+
+                        <p>
+                            Create tasks, set due dates,
+                            and organize your subjects.
+                        </p>
+
+                    </div>
+
+                    <span class="feature-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- POMODORO -->
+
+                <a
+                    href="pomodoro.html"
+                    class="feature-card"
+                >
+
+                    <div class="feature-icon">
+                        ◷
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Pomodoro
+                        </h3>
+
+                        <p>
+                            Focus with timed study
+                            sessions and breaks.
+                        </p>
+
+                    </div>
+
+                    <span class="feature-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- QUIZZES -->
+
+                <a
+                    href="quizzes.html"
+                    class="feature-card"
+                >
+
+                    <div class="feature-icon">
+                        ?
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Quizzes
+                        </h3>
+
+                        <p>
+                            Test your knowledge with
+                            subject-based questions.
+                        </p>
+
+                    </div>
+
+                    <span class="feature-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- PROGRESS -->
+
+                <a
+                    href="progress.html"
+                    class="feature-card"
+                >
+
+                    <div class="feature-icon">
+                        ↗
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Progress
+                        </h3>
+
+                        <p>
+                            See your completion rate
+                            and subject progress.
+                        </p>
+
+                    </div>
+
+                    <span class="feature-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- RESOURCES -->
+
+                <a
+                    href="resources.html"
+                    class="feature-card"
+                >
+
+                    <div class="feature-icon">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Resources
+                        </h3>
+
+                        <p>
+                            Explore useful study materials
+                            for every subject.
+                        </p>
+
+                    </div>
+
+                    <span class="feature-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- PEER HELP -->
+
+                <a
+                    href="peer-help.html"
+                    class="feature-card"
+                >
+
+                    <div class="feature-icon">
+                        ♧
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Peer Help
+                        </h3>
+
+                        <p>
+                            Ask questions and share
+                            knowledge with other students.
+                        </p>
+
+                    </div>
+
+                    <span class="feature-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="site-footer">
+
+            <div class="footer-logo">
+                📚 StudyLink
+            </div>
+
+            <p>
+                Your personal study platform.
+            </p>
+
+            <span>
+                Built for better learning.
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

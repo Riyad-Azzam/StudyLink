@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peer Help | StudyLink</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">📚</div>
+
+            <div class="logo-text">
+                <strong>StudyLink</strong>
+                <span>Your study platform</span>
+            </div>
+        </div>
+
+        <nav class="side-nav">
+
+            <a href="index.html" class="nav-item">
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="planner.html" class="nav-item">
+                <span>📋</span>
+                <span>Study Planner</span>
+            </a>
+
+            <a href="pomodoro.html" class="nav-item">
+                <span>⏱️</span>
+                <span>Pomodoro</span>
+            </a>
+
+            <a href="quizzes.html" class="nav-item">
+                <span>🧠</span>
+                <span>Quizzes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <span>📊</span>
+                <span>Progress</span>
+            </a>
+
+            <a href="resources.html" class="nav-item">
+                <span>📚</span>
+                <span>Resources</span>
+            </a>
+
+            <a href="peer-help.html" class="nav-item active">
+                <span>🤝</span>
+                <span>Peer Help</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="study-tip">
+
+                <div class="tip-small-icon">
+                    💡
+                </div>
+
+                <div>
+                    <strong>Study Tip</strong>
+
+                    <p>
+                        Helping someone else can strengthen your own understanding.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div>
+
+                <span class="welcome-small">
+                    Peer Help
+                </span>
+
+                <h1>
+                    Learn together 🤝
+                </h1>
+
+                <p class="page-description">
+                    Ask questions, share explanations and help other students.
+                </p>
+
+            </div>
+
+            <a href="index.html" class="back-button">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <!-- Hero -->
+        <section class="peer-hero">
+
+            <div class="peer-hero-icon">
+                🤝
+            </div>
+
+            <div class="peer-hero-content">
+
+                <span class="hero-label">
+                    STUDY TOGETHER
+                </span>
+
+                <h2>
+                    You don't have to study alone.
+                </h2>
+
+                <p>
+                    Connect with other students, ask questions,
+                    explain concepts and learn from each other.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        GET STARTED
+                    </span>
+
+                    <h2>
+                        How can you help?
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="peer-actions-grid">
+
+                <button class="peer-action-card" id="askQuestionButton">
+
+                    <div class="peer-action-icon">
+                        ❓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Ask a Question
+                        </h3>
+
+                        <p>
+                            Stuck on something? Ask other students for help.
+                        </p>
+
+                    </div>
+
+                    <span class="peer-action-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="peer-action-card" id="helpSomeoneButton">
+
+                    <div class="peer-action-icon">
+                        💡
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Help Someone
+                        </h3>
+
+                        <p>
+                            Share what you know and explain a difficult topic.
+                        </p>
+
+                    </div>
+
+                    <span class="peer-action-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="peer-action-card" id="shareResourceButton">
+
+                    <div class="peer-action-icon">
+                        📚
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Share a Resource
+                        </h3>
+
+                        <p>
+                            Recommend a useful video, website or study material.
+                        </p>
+
+                    </div>
+
+                    <span class="peer-action-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Ask Question -->
+        <section class="peer-form-section" id="peerQuestionSection">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        ASK THE COMMUNITY
+                    </span>
+
+                    <h2>
+                        Ask a question
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="peer-form-card">
+
+                <div class="form-group">
+
+                    <label for="peerSubject">
+                        Subject
+                    </label>
+
+                    <select id="peerSubject">
+
+                        <option value="Math">
+                            Math
+                        </option>
+
+                        <option value="Arabic">
+                            Arabic
+                        </option>
+
+                        <option value="English">
+                            English
+                        </option>
+
+                        <option value="Computer Science">
+                            Computer Science
+                        </option>
+
+                        <option value="Physics">
+                            Physics
+                        </option>
+
+                        <option value="Chemistry">
+                            Chemistry
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="peerQuestion">
+                        Your Question
+                    </label>
+
+                    <textarea
+                        id="peerQuestion"
+                        rows="5"
+                        placeholder="Explain what you're struggling with..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    class="primary-button peer-submit-button"
+                    id="postQuestionButton"
+                    type="button"
+                >
+                    Post Question →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Questions -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        COMMUNITY
+                    </span>
+
+                    <h2>
+                        Recent Questions
+                    </h2>
+
+                </div>
+
+                <span class="peer-question-count" id="peerQuestionCount">
+                    0 Questions
+                </span>
+
+            </div>
+
+
+            <div class="peer-question-list" id="peerQuestionList">
+
+                <div class="peer-empty-state" id="peerEmptyState">
+
+                    <div class="empty-icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        No questions yet
+                    </h3>
+
+                    <p>
+                        Be the first person to ask a question.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Community Rules -->
+        <section class="peer-rules-card">
+
+            <div class="peer-rules-icon">
+                🫶
+            </div>
+
+            <div>
+
+                <span class="section-label">
+                    COMMUNITY GUIDELINES
+                </span>
+
+                <h2>
+                    Keep StudyLink helpful.
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Be respectful to other students.
+                    </li>
+
+                    <li>
+                        Explain concepts instead of just giving answers.
+                    </li>
+
+                    <li>
+                        Ask clear and specific questions.
+                    </li>
+
+                    <li>
+                        Share useful and appropriate study resources.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="site-footer">
+
+            <div class="footer-logo">
+                📚 <strong>StudyLink</strong>
+            </div>
+
+            <p>
+                Your personal study platform.
+            </p>
+
+            <span>
+                Study smarter. Stay consistent.
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

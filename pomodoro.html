@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Pomodoro | StudyLink</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head><body><!-- =========================
+     SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <span class="logo-icon">
+            📚
+        </span>
+
+        <div>
+
+            <h2>
+                StudyLink
+            </h2>
+
+            <p>
+                Study smarter.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="side-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="planner.html" class="nav-item">
+            <span>📋</span>
+            <span>Study Planner</span>
+        </a>
+
+        <a
+            href="pomodoro.html"
+            class="nav-item active"
+        >
+            <span>⏱️</span>
+            <span>Pomodoro</span>
+        </a>
+
+        <a href="quizzes.html" class="nav-item">
+            <span>🧠</span>
+            <span>Quizzes</span>
+        </a>
+
+        <a href="progress.html" class="nav-item">
+            <span>📊</span>
+            <span>Progress</span>
+        </a>
+
+        <a href="resources.html" class="nav-item">
+            <span>📖</span>
+            <span>Resources</span>
+        </a>
+
+        <a href="peer-help.html" class="nav-item">
+            <span>🤝</span>
+            <span>Peer Help</span>
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="study-tip">
+
+            <span>💡</span>
+
+            <div>
+
+                <strong>
+                    Study Tip
+                </strong>
+
+                <p>
+                    Focus on one thing
+                    at a time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <p class="welcome-small">
+                FOCUS MODE
+            </p>
+
+            <h1>
+                Pomodoro Timer ⏱️
+            </h1>
+
+            <p class="page-description">
+                Focus deeply, take meaningful
+                breaks, and keep moving.
+            </p>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         TIMER
+    ========================== -->
+
+    <section class="pomodoro-page">
+
+
+        <div class="pomodoro-card">
+
+
+            <div class="timer-header">
+
+                <span class="section-label">
+                    FOCUS SESSION
+                </span>
+
+                <div
+                    id="timerMode"
+                    class="timer-mode"
+                >
+                    Focus Session
+                </div>
+
+            </div>
+
+
+
+            <!-- TIMER DISPLAY -->
+
+            <div
+                id="timerDisplay"
+                class="timer-display"
+            >
+                25:00
+            </div>
+
+
+
+            <p class="timer-message">
+                Stay focused. You've got this. 🎯
+            </p>
+
+
+
+            <!-- MAIN CONTROLS -->
+
+            <div class="timer-controls">
+
+                <button
+                    id="startTimerButton"
+                    class="timer-main-button"
+                >
+                    ▶ Start
+                </button>
+
+
+                <button
+                    id="pauseTimerButton"
+                    class="timer-control-button"
+                >
+                    ⏸ Pause
+                </button>
+
+
+                <button
+                    id="resetTimerButton"
+                    class="timer-control-button"
+                >
+                    🔄 Reset
+                </button>
+
+            </div>
+
+
+
+            <!-- PRESETS -->
+
+            <div class="timer-presets">
+
+                <p>
+                    Session length
+                </p>
+
+
+                <div class="preset-buttons">
+
+                    <button
+                        data-minutes="25"
+                        class="preset-button active"
+                    >
+                        25 min
+                    </button>
+
+
+                    <button
+                        data-minutes="15"
+                        class="preset-button"
+                    >
+                        15 min
+                    </button>
+
+
+                    <button
+                        data-minutes="5"
+                        class="preset-button"
+                    >
+                        5 min
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <div class="pomodoro-info">
+
+
+            <div class="info-card">
+
+                <div class="info-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Choose a session
+                    </h3>
+
+                    <p>
+                        Pick 25, 15, or 5 minutes
+                        depending on your study goal.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Focus
+                    </h3>
+
+                    <p>
+                        Remove distractions and
+                        work only on your current task.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Take a break
+                    </h3>
+
+                    <p>
+                        When your session ends,
+                        step away and recharge.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             MOTIVATION
+        ========================== -->
+
+        <div class="focus-card">
+
+            <div class="focus-icon">
+                🎯
+            </div>
+
+            <div>
+
+                <h2>
+                    One task. One session.
+                </h2>
+
+                <p>
+                    You don't need to finish
+                    everything at once. Just
+                    focus on what is in front
+                    of you.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-logo">
+            📚 StudyLink
+        </div>
+
+        <p>
+            Learn. Organize. Improve.
+        </p>
+
+    </footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body></html>

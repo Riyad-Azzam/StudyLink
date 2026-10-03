@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Study Planner | StudyLink</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head><body><!-- =========================
+     SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <span class="logo-icon">
+            📚
+        </span>
+
+        <div>
+
+            <h2>
+                StudyLink
+            </h2>
+
+            <p>
+                Study smarter.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="side-nav">
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+            <span>🏠</span>
+            <span>Dashboard</span>
+        </a>
+
+
+        <a
+            href="planner.html"
+            class="nav-item active"
+        >
+            <span>📋</span>
+            <span>Study Planner</span>
+        </a>
+
+
+        <a
+            href="pomodoro.html"
+            class="nav-item"
+        >
+            <span>⏱️</span>
+            <span>Pomodoro</span>
+        </a>
+
+
+        <a
+            href="quizzes.html"
+            class="nav-item"
+        >
+            <span>🧠</span>
+            <span>Quizzes</span>
+        </a>
+
+
+        <a
+            href="progress.html"
+            class="nav-item"
+        >
+            <span>📊</span>
+            <span>Progress</span>
+        </a>
+
+
+        <a
+            href="resources.html"
+            class="nav-item"
+        >
+            <span>📖</span>
+            <span>Resources</span>
+        </a>
+
+
+        <a
+            href="peer-help.html"
+            class="nav-item"
+        >
+            <span>🤝</span>
+            <span>Peer Help</span>
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="study-tip">
+
+            <span>
+                💡
+            </span>
+
+            <div>
+
+                <strong>
+                    Study Tip
+                </strong>
+
+                <p>
+                    Plan your work.
+                    Then work your plan.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <p class="welcome-small">
+                ORGANIZE YOUR WORK
+            </p>
+
+            <h1>
+                Study Planner 📋
+            </h1>
+
+            <p class="page-description">
+                Plan your tasks, manage deadlines,
+                and stay organized.
+            </p>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         PLANNER OVERVIEW
+    ========================== -->
+
+    <section class="planner-overview">
+
+
+        <div class="planner-intro">
+
+            <span class="section-label">
+                YOUR PLANNER
+            </span>
+
+            <h2>
+                What do you need to study?
+            </h2>
+
+            <p>
+                Add a task, choose its subject,
+                and set a deadline.
+            </p>
+
+        </div>
+
+
+        <div class="planner-mini-stats">
+
+
+            <div class="mini-stat">
+
+                <span>
+                    📋
+                </span>
+
+                <div>
+
+                    <small>
+                        Total
+                    </small>
+
+                    <strong id="plannerTotal">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-stat">
+
+                <span>
+                    ⏳
+                </span>
+
+                <div>
+
+                    <small>
+                        Remaining
+                    </small>
+
+                    <strong id="plannerRemaining">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-stat">
+
+                <span>
+                    ✅
+                </span>
+
+                <div>
+
+                    <small>
+                        Completed
+                    </small>
+
+                    <strong id="plannerCompleted">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ADD TASK
+    ========================== -->
+
+    <section class="planner-card">
+
+
+        <div class="card-heading">
+
+            <div>
+
+                <span class="section-label">
+                    NEW TASK
+                </span>
+
+                <h2>
+                    Add a Study Task
+                </h2>
+
+            </div>
+
+            <span class="card-heading-icon">
+                ✨
+            </span>
+
+        </div>
+
+
+
+        <div class="task-form">
+
+
+            <div class="form-group">
+
+                <label for="subjectSelect">
+                    Subject
+                </label>
+
+                <select id="subjectSelect">
+
+                    <option value="Math">
+                        Math
+                    </option>
+
+                    <option value="Arabic">
+                        Arabic
+                    </option>
+
+                    <option value="English">
+                        English
+                    </option>
+
+                    <option value="Computer Science">
+                        Computer Science
+                    </option>
+
+                    <option value="Physics">
+                        Physics
+                    </option>
+
+                    <option value="Chemistry">
+                        Chemistry
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group task-input-group">
+
+                <label for="taskInput">
+                    Task
+                </label>
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="e.g. Finish algebra exercises..."
+                    maxlength="150"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="dueDate">
+                    Due Date
+                </label>
+
+                <input
+                    type="date"
+                    id="dueDate"
+                >
+
+            </div>
+
+
+
+            <button
+                id="addTaskButton"
+                class="add-task-button"
+            >
+                <span>＋</span>
+                Add Task
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FILTERS
+    ========================== -->
+
+    <section class="planner-tasks-section">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    TASKS
+                </span>
+
+                <h2>
+                    My Tasks
+                </h2>
+
+            </div>
+
+
+            <span
+                id="taskStatus"
+                class="task-status"
+            >
+                All tasks
+            </span>
+
+        </div>
+
+
+
+        <div class="task-filter">
+
+            <button
+                onclick="showAllTasks()"
+                class="filter-button"
+            >
+                📋 All
+            </button>
+
+
+            <button
+                onclick="filterTasks('Math')"
+                class="filter-button"
+            >
+                ➗ Math
+            </button>
+
+
+            <button
+                onclick="filterTasks('Arabic')"
+                class="filter-button"
+            >
+                🇯🇴 Arabic
+            </button>
+
+
+            <button
+                onclick="filterTasks('English')"
+                class="filter-button"
+            >
+                🇬🇧 English
+            </button>
+
+
+            <button
+                onclick="filterTasks('Computer Science')"
+                class="filter-button"
+            >
+                💻 Computer Science
+            </button>
+
+
+            <button
+                onclick="filterTasks('Physics')"
+                class="filter-button"
+            >
+                ⚛️ Physics
+            </button>
+
+
+            <button
+                onclick="filterTasks('Chemistry')"
+                class="filter-button"
+            >
+                🧪 Chemistry
+            </button>
+
+        </div>
+
+
+
+        <!-- TASK LIST -->
+
+        <div
+            id="taskList"
+            class="task-list"
+        >
+
+            <!-- Tasks will appear here -->
+
+        </div>
+
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            id="emptyTaskState"
+            class="empty-state"
+        >
+
+            <div class="empty-icon">
+                📝
+            </div>
+
+            <h3>
+                No tasks yet
+            </h3>
+
+            <p>
+                Add your first study task
+                above to get started.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PLANNER TIP
+    ========================== -->
+
+    <section class="planner-tip-card">
+
+        <div class="tip-icon">
+            💡
+        </div>
+
+        <div>
+
+            <h3>
+                Make your plan realistic
+            </h3>
+
+            <p>
+                Break large assignments into
+                smaller tasks. It makes progress
+                easier to see and easier to achieve.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-logo">
+            📚 StudyLink
+        </div>
+
+        <p>
+            Learn. Organize. Improve.
+        </p>
+
+    </footer>
+
+
+</main>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body></html>
